@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- bean definitions here -->
+    <bean id="coffee" class="Coffee">
+        <constructor-arg value="Arabic"/>
 
-    <!-- bean Cream -->
-    <bean id="arabika" class="MilkCoffee">
-        <constructor-arg value="Arabica"/>
+    </bean>
+
+    <bean id="milk" class="Milk">
+    </bean>
+
+    <bean id="cream" class="Cream">
+    </bean>
+
+    <bean id="milkCoffee" class="MilkCoffee">
+        <constructor-arg ref="coffee"/>
+        <constructor-arg ref="milk"/>
     </bean>
 
 

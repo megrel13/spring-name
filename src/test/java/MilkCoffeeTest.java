@@ -3,7 +3,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-@DisplayName("Class CoffeeShop")
+@DisplayName("Class CoffeeShopp")
 public class MilkCoffeeTest {
 
 

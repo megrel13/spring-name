@@ -7,6 +7,7 @@ import lombok.Data;
 public class Cream implements Milky {
     @Override
     public double getPercentage() {
-        return 3.5;
+        return 3.6;
+
     }
 }
